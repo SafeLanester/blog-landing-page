@@ -58,15 +58,16 @@ body {
   text-align: center;
 }
 .features h2 {
-  font-size: 2rem;
+  font-size: 3rem;
   margin-bottom: 20px;
+  color: #bdb76b
 }
 .features ul {
   list-style-type: none;
   padding: 0;
 }
 .features ul li {
-  font-size: 1.2rem;
+  font-size: 2rem;
   margin-bottom: 10px;
 }
 
