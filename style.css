@@ -1,0 +1,83 @@
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #778899;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  background-color: #2f4f4f;
+  color: #fff;
+  text-align: center;
+  padding: 50px 20px;
+}
+.header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+.header p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+.header .signup-form {
+  display: flex;
+  justify-content: center;
+}
+.header .signup-form input[type=email] {
+  padding: 10px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  font-size: 1rem;
+  width: 300px;
+}
+.header .signup-form button {
+  padding: 10px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  background-color: #bdb76b;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.header .signup-form button:hover {
+  background-color: #ece91d;
+}
+
+.features {
+  background-color: #778899;
+  padding: 50px 20px;
+  text-align: center;
+}
+.features h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.features ul {
+  list-style-type: none;
+  padding: 0;
+}
+.features ul li {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.footer {
+  background-color: #2f4f4f;
+  text-align: center;
+  padding: 20px;
+}
+.footer p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+/*# sourceMappingURL=style.css.map */
