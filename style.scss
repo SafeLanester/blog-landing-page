@@ -1,0 +1,97 @@
+$primary-color: #bdb76b;
+$secondary-color: #778899;
+$text-color: #333;
+$alt-text-color: #f5f5f5;
+$alt-secondary-color: #2f4f4f;
+$footer-bg-color: #2f4f4f;
+$button-bg-color: #bdb76b;
+$button-hover-bg-color: #ece91d;
+
+		body {
+			  font-family: Arial, sans-serif;
+			  color: $text-color;
+			  background-color: $secondary-color;
+			  margin: 0;
+			  padding: 0;
+			}
+			
+			.container {
+			  width: 100%;
+			  max-width: 1200px;
+			  margin: 0 auto;
+			  padding: 20px;
+			}
+		.header {
+			  background-color: $alt-secondary-color;
+			  color: #fff;
+			  text-align: center;
+			  padding: 50px 20px;
+			
+			  h1 {
+			    font-size: 2.5rem;
+			    margin-bottom: 10px;
+			  }
+			
+			  p {
+			    font-size: 1.2rem;
+			    margin-bottom: 30px;
+			  }
+			
+			  .signup-form {
+			    display: flex;
+			    justify-content: center;
+			
+			    input[type="email"] {
+			      padding: 10px;
+			      border: none;
+			      border-radius: 4px 0 0 4px;
+			      font-size: 1rem;
+			      width: 300px;
+			    }
+			
+			    button {
+			      padding: 10px;
+			      border: none;
+			      border-radius: 0 4px 4px 0;
+			      background-color: $button-bg-color;
+			      color: #fff;
+			      font-size: 1rem;
+			      cursor: pointer;
+			      transition: background-color 0.3s;
+			
+			      &:hover {
+			        background-color: $button-hover-bg-color;
+			      }
+			    }
+			  }
+			}
+			.features {
+				  background-color: $secondary-color;
+				  padding: 50px 20px;
+				  text-align: center;
+				
+				  h2 {
+				    font-size: 2rem;
+				    margin-bottom: 20px;
+				  }
+				
+				  ul {
+				    list-style-type: none;
+				    padding: 0;
+				
+				    li {
+				      font-size: 1.2rem;
+				      margin-bottom: 10px;
+				    }
+				  }
+				}
+			.footer {
+				  background-color: $footer-bg-color;
+				  text-align: center;
+				  padding: 20px;
+				
+				  p {
+				    margin: 0;
+				    font-size: 1rem;
+				  }
+				}
