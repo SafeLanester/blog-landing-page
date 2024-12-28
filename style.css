@@ -12,7 +12,11 @@ body {
   margin: 0 auto;
   padding: 20px;
 }
+.container Hero {
+  position: relavent;
+  right: 50%;
 
+}
 .header {
   background-color: #2f4f4f;
   color: #fff;
