@@ -52,7 +52,7 @@ body {
   width: 300px;
 }
 
-.header .signup-form button {
+.header .btn-primary {
   padding: 10px;
   border: none;
   border-radius: 0 4px 4px 0;
@@ -63,7 +63,7 @@ body {
   transition: background-color 0.3s;
 }
 
-.header .signup-form button:hover {
+.header .btn-primary:hover {
   background-color: #ece91d;
 }
 
