@@ -67,6 +67,10 @@ body {
   background-color: #ece91d;
 }
 
+img {
+  border-radius: 15px;
+}
+
 .features {
   background-color: #778899;
   padding: 50px 20px;
