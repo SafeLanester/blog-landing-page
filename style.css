@@ -1,5 +1,6 @@
 /* Updated CSS */
 body {
+  display: flex;
   font-family: Arial, sans-serif;
   color: #333;
   background-color: #778899;
