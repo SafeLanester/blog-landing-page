@@ -75,6 +75,7 @@ img {
 
 .features {
   display: flex;
+  flex-direction: column;
   background-color: #778899;
   padding: 50px 20px;
   text-align: center;
