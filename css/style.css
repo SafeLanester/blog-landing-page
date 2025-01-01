@@ -9,21 +9,6 @@ body {
   padding: 0;
 }
 
-.container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-.container.Hero {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100vh;
-  text-align: center;
-}
-
 .header {
   background-color: #2f4f4f;
   color: #fff;
@@ -71,6 +56,21 @@ body {
 
 img {
   border-radius: 15px;
+}
+
+.container.Hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 .features {
