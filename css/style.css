@@ -56,20 +56,18 @@ body {
 
 img {
   border-radius: 15px;
-  margin: 20px auto; /* Center the image */
-  width: 100%; /* Make image responsive */
-  max-width: 700px; /* Add max-width */
 }
 
 .container.Hero {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: auto; /* Adjust height for mobile */
+  height: 100vh;
   text-align: center;
 }
 
 .container {
+  display: flex;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
@@ -111,28 +109,6 @@ img {
   margin: 0;
   font-size: 1rem;
   color: #f5f5f5;
-}
-
-@media (min-width: 768px) {
-  .header {
-    padding: 50px 50px;
-  }
-
-  .header .signup-form {
-    display: block;
-    text-align: center;
-  }
-
-  .container.Hero {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .features {
-    flex-direction: row;
-    justify-content: space-around;
-  }
 }
 
 @media (min-width: 992px) {
