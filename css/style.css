@@ -1,118 +1,73 @@
-/* Updated CSS */
-body {
-  display: flex;
-  flex-direction: column;
-  font-family: Arial, sans-serif;
-  color: #333;
-  background-color: #778899;
-  margin: 0;
-  padding: 0;
+#Home {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: #333;
+    background: linear-gradient(to right, lightslategray, #737990, darkslategray, #697990);
+}
+#Content {
+    margin: 5px;
+    border: 5px solid black;
+    padding: auto;    
+    /* display: flex;
+    flex-direction: column; */
 }
 
-.header {
-  background-color: #2f4f4f;
-  color: #fff;
-  text-align: center;
-  padding: 50px 20px;
+#Header {
+    border:1.5px dashed black;
+    background-color: #737990;
+    color: #fff;
 }
 
-.header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
+.wrapper {
+    border: 3px solid gold;
+
+    width: fit-content;
+    
+
+}    
+
+.logo {
+    border: 1px solid purple;
+    padding: 5px;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+}
+#Subscribe {
+    border: 5px solid blue;
+    padding: 50px;
+
+}
+#form {
+    border: 5px solid greenyellow;
+    padding: 20px;
+
 }
 
-.header p {
-  font-size: 1.2rem;
-  margin-bottom: 30px;
+#SocialIcons {
+    display: flex;
+    flex-direction: row;
+
 }
 
-.header .signup-form {
-  display: flex;
-  justify-content: center;
+#Hero-img {
+    border: 2px solid red;
+    width: 400px;
+    max-width: auto;
+    display: contents;    
 }
-
-.header .signup-form input[type=email] {
-  padding: 10px;
-  border: none;
-  border-radius: 4px 0 0 4px;
-  font-size: 1rem;
-  width: 300px;
+#One {
+    background: radial-gradient(circle, #737990, #eaedf0);
 }
-
-.header .btn-primary {
-  padding: 10px;
-  border: none;
-  border-radius: 0 4px 4px 0;
-  background-color: #bdb76b;
-  color: #fff;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.3s;
+#Two {
+    background: radial-gradient(circle, #eaedf0, #737990);
 }
-
-.header .btn-primary:hover {
-  background-color: #ece91d;
+#Three {
+    background: radial-gradient(circle, #737990, #eaedf0);
 }
-
-img {
-  border-radius: 15px;
-}
-
-.container.Hero {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100vh;
-  text-align: center;
-}
-
-.container {
-  display: flex;
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-.features {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  background-color: #778899;
-  padding: 50px 20px;
-  text-align: center;
-}
-
-.features h2 {
-  font-size: 3rem;
-  margin-bottom: 20px;
-  color: #bdb76b;
-}
-
-.features ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.features ul li {
-  font-size: 2rem;
-  margin-bottom: 10px;
-}
-
-.footer {
-  background-color: #2f4f4f;
-  text-align: center;
-  padding: 20px;
-}
-
-.footer p {
-  margin: 0;
-  font-size: 1rem;
-  color: #f5f5f5;
-}
-
-@media (min-width: 992px) {
-  .rounded-lg-3 {
-    border-radius: .3rem;
-  }
+#Four {
+    background: radial-gradient(circle, #eaedf0, #737990);
 }
