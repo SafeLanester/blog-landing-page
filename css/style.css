@@ -7,20 +7,20 @@
 }
 #Content {
     margin: 5px;
-    border: 5px solid black;
+    /* border: 5px solid black; */
     padding: auto;    
     /* display: flex;
     flex-direction: column; */
 }
 
 #Header {
-    border:1.5px dashed black;
+    /* border:1.5px dashed black; */
     background-color: #737990;
     color: #fff;
 }
 
 .wrapper {
-    border: 3px solid gold;
+    /* border: 3px solid gold; */
 
     width: fit-content;
     
@@ -28,7 +28,7 @@
 }    
 
 .logo {
-    border: 1px solid purple;
+    /* border: 1px solid purple; */
     padding: 5px;
     font-family: "Poppins", sans-serif;
     display: flex;
@@ -37,12 +37,12 @@
     font-size: larger;
 }
 #Subscribe {
-    border: 5px solid blue;
+    /* border: 5px solid blue; */
     padding: 50px;
 
 }
 #form {
-    border: 5px solid greenyellow;
+    /* border: 5px solid greenyellow; */
     padding: 20px;
 
 }
@@ -54,7 +54,7 @@
 }
 
 #Hero-img {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     width: 400px;
     max-width: auto;
     display: contents;    
