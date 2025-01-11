@@ -8,14 +8,14 @@
 #Content {
     margin: 5px;
     /* border: 5px solid black; */
-    padding: auto;    
+   
     /* display: flex;
     flex-direction: column; */
 }
 
 #Header {
     /* border:1.5px dashed black; */
-    background-color: #737990;
+    background: linear-gradient(to right, lightslategray, darkslategray, #697990, #737990);
     color: #fff;
 }
 
