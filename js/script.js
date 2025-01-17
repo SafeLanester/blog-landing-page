@@ -1,10 +1,17 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const animation1 = document.querySelectorAll('animation1 span');
-    const heroImage = document.getElementById('animation2');
-    const card = document.getElementById('#VibratingCard');
+    const animation1 = document.querySelectorAll('#animation1 span');
+    const heroImage = document.getElementById('Animation2');
+    const cards = document.querySelectorAll('.vibrating'); // Selecting all vibrating cards
     
     function playGlow(animationSpans, index = 0) {
-        animationSpans.forEach(span => span.classList.remove('active'));
+        animationSpans.forEach(span => {
+        span.classList.remove('active');
+        // Re-trigger glow animation
+        span.style.animationName = 'none';
+        setTimeout(() => {
+            span.style.animationName = 'glow';
+        }, 10);
+        });
         if (index < animationSpans.length) {
             animationSpans[index].classList.add('active');
             index++;
@@ -20,12 +27,17 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     function startSpin() {
-        heroImage.style.animationPlayState = 'running';
+        heroImage.style.animationName = 'none';
+        setTimeout(() => {
+            heroImage.style.animationName = 'spin';
+        }, 10) // Quick reset to re-trigger the animation 
     }
     
     function startVibrate() {
-        card.classList.add('active');
-        setTimeout(() => card.classList.remove('active'), 5000); // Stop vibrating after 5 seconds
+        cards.forEach(card => {
+            card.classList.add('active');
+            setTimeout(() => card.classList.remove('active'), 5000); // Stop vibrating after 5 seconds
+        });
     }
     
     function startAnimations() {
