@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta name="facebook-domain-verification" content="swbk6sqk9h48i5xeocox7mqtreqxry" />
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-DN8SX96R8Z"></script>
 <script>
@@ -29,9 +30,10 @@
     <div class="row">
       <div class="wrapper hero">    
     <div class="d-flex p-2 logo">
-        <h1 class="glow-text"><img src="images/favicon-32x32.png" style="border-radius: 12%;" alt="logo" /> 
+        <h1 class="glow-text" id="animation1"><img src="images/favicon-32x32.png" style="border-radius: 12%;" alt="logo" /> 
         <span>S</span><span>a</span><span>f</span><span>e</span>-<span>L</span><span>a</span><span>n</span><span>e</span></h1>
-    </div><!--logo-->
+
+  </div><!--logo-->
         <h2 >Our New Site Is Coming Soon:</h2>
         <strong> Stay tuned for a great site you can trust. </strong>
      <div class="countdown"></div>
@@ -45,7 +47,9 @@
        <div id="SocialIcons" class="text-center">
 
           <h3>Or Follow Us on: </h3>
-  
+          <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          <a href="#" class="social-button twitter" onclick="shareOnTwitter()"><i class="fab fa-twitter"></i> Follow</a> 
+          <a href="#" class="social-button facebook" onclick="shareOnFacebook()"><i class="fab fa-facebook"></i> Share</a>
         <div><a href="" title="Twitter" class="twitterIcon"></a></div>
         <div><a href="" title="linkedIn" class="linkedInIcon"></a></div>
         <div><a href="" title="Facebook" class="pintrestIcon"></a></div>
@@ -53,11 +57,10 @@
        </div> <!--SocialIcons 45-->
       </div> <!--Form 40-->
     </div> <!--Subscribe 38-->
-     </div> <!--hero-->
-      <div id="Hero-img">
-        <img src="images/gadget-up.png" class="img-fluid hero" alt="Gadgets" width="700" height="500" loading="lazy">
-      </div> <!--Hero-img 57-->
-        
+
+    <div class="hero-img" id="Animation2" >
+        <img  src="images/gadget-up.png"  class="img-fluid hero" alt="Gadgets" width="700" height="500" loading="lazy">
+           </div> <!--hero-->  
     </div> <!--row-->
     </div> <!--Header-->
 
@@ -65,55 +68,47 @@
     <div class="space"></div>
     <div class="row">
         <section class="features">
-                <h2 class="text-center">Features</h2>
-                <div class="container">
-                    <div id="One" class="col-12 col-md-6 p-2 m-1" style="border-radius: 15px;">
-                        <div class="col-3 text-center">
-                          <img src="images/future-bot.png" class="img-fluid" data-at2x="img/icon-1@2x.png" alt="Features"> 
-                        </div> <!--71-->
-                        <div class="col-9">
-                          <h4>In-depth articles on the latest tech trends</h4>
-                          <p>Subjects include AI, Cybersecurity, Electronics and More</p>
-                        </div> <!--74-->
-                      </div> <!--70-->
-                    </div> <!--69-->
-                    <div id="Two" class="col-12 col-md-6 p-2 m-1" style="border-radius: 15px;">
-                        <div class="col-3 text-center"> 
+          <div class="card-group">
+            <div class="card vibrating" id="One">           
+            <div class="card vibrating"  id="VibratingCard-1" style="border-radius: 15px; ">
+
+                          <img src="images/future-bot.png" class="card-img-top img-fluid" data-at2x="img/icon-1@2x.png" alt="Features"> 
+                      <div class="card-body">
+                          <h3 class="card-title">In-depth articles on the latest tech trends </h3>
+                          <p class="card-text">Subjects include AI, Cybersecurity, Electronics and More</p>
+                        </div> <!--card body-->
+
+              </div> <!--VC1-->
+              </div> <!--Card 1-->
+              <div class="card vibrating" id="Two" style="border-radius: 15px;">
+                      <div class="card vibrating" id="VibratingCard-2">
                           <img id="TheExperts" src="images/TheExperts.png" data-at2x="img/icon-2@2x.png" alt="Features"> 
-                        </div> <!--81-->
-                        <div class="col-9">
-                          <h4>Expert reviews and tutorials</h4>
-                          <p>Trying to do things a little different here</p>
-                        </div> <!--84-->
-                      </div> <!--80-->
-    </div><!--row 66-->
-                    </div>
-                    <div class="container">
-                    <div id="Three" class="col-12 col-md-6 p-2 m-1" style="border-radius: 15px;">
-                      <div class="featuresPro"> 
-                        <div class="col-3 text-center"> 
-                          <img src="images/watch.png" data-at2x="img/icon-3@2x.png" alt="Features"> 
-                        </div> <!--94-->
-                        <div class="col-9">
-                          <h4>Exclusive insights and tips</h4>
-                          <p>Sometimes we only need a little bit of help</p>
-                        </div> <!--97-->
-                      </div> <!--93-->
-                    </div><!--92-->
-                    <div id="Four" class="col-12 col-md-6 p-2 m-1" style="border-radius: 15px;">
-                      <div class="featuresPro"> 
-                        <div class="col-3 text-center"> 
-                          <img src="images/icon-4.png" data-at2x="img/icon-4@2x.png" alt="Features"> 
-                        </div> <!--105-->
-                        <div class="col-9">
-                          <h4>Engaging content for tech enthusiasts</h4>
-                          <p>Going to try new things, hope you enjoy.</p>
-                        </div> <!--108-->
-                      </div> <!--104-->
-                    </div> <!--103-->
-                  </div> <!--91-->
-                </div>
-                
+                        <div class="card-body">
+                          <h3 class="card-title">Expert reviews and tutorials </h3>
+                          <p class="card-text">Trying to do things a little different here</p>
+                        </div> <!--card body-->
+              </div>
+            </div> <!--Card 2-->                 
+              <div id="Three" class="card vibrating" style="border-radius: 15px;">
+                      <div class="card vibrating" id="VibratingCard-3">
+                          <img class="card-img-top" src="images/watch.png" data-at2x="img/icon-3@2x.png" alt="Features"> 
+                          <div class="card-body">
+                            <h3 class="card-title">Exclusive insights and tips </h3>
+                          <p class="card-text">Sometimes we only need a little bit of help</p>
+                        </div> <!--card body-->
+                        </div><!--VC3-->
+              </div> <!--Card 3-->
+              <div id="Four" class="card vibrating" style="border-radius: 15px;">
+                      <div class="card vibrating" id="VibratingCard-4">
+                          <img class="card-img-top" src="images/icon-4.png" data-at2x="img/icon-4@2x.png" alt="Features"> 
+                        <div class="card-body">
+                          <h4 class="card-title">Engaging content for tech enthusiasts</h4>
+                          <p class="card-text">Going to try new things, hope you enjoy.</p>
+                        </div> <!--card body-->
+                      </div> <!--VC4-->
+              </div> <!--Card 4-->
+            </div> <!--card group-->
+              </div><!--row 66-->  
     </div> <!--row-->
     </div> <!--container-->
     </div> <!--row 70-->
@@ -134,13 +129,13 @@
   
      <!-- Scripts --> 
      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
+     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
      <!-- Bootstrap's JavaScript plugins -->
      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
- 
+     <script src="js/script.js"></script>
       <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script> 
       <script type="text/javascript" src="js/jquery.countdown.js"></script> 
       <script type="text/javascript" src="js/global.js"></script>

@@ -1,23 +1,32 @@
-html, body {
+html, #Home{
     margin: 0;
     border: none;
     left: 0;
     top: 0;
     height: 100%;
-}
-#Home {
     max-width: 100%;
     display: flex;
     flex-direction: column;
     color: #333;
     background: linear-gradient(to right, lightslategray, #737990, darkslategray, #697990);
+
 }
+
+.img-fluid.hero {
+    position: relative;
+    border-radius: 15%;
+    animation: spin-in 2s ease-in-out forwards;
+    /* opacity: 0;  */
+    transform: rotate(0deg);
+
+} 
+
 #Content {
 
-    /* border: 5px solid black; */
+    border: 5px solid black;
    
-    /* display: flex;
-    flex-direction: column; */
+    display: flex;
+    flex-direction: column;
 }
 
 #Header {
@@ -60,32 +69,54 @@ span {
     margin: 0;
 }
 
-#Hero-img {
-    /* border: 2px solid red; */
-    width: 400px;
-    max-width: auto;
-    display: contents;    
-}
 
 #One {
     background: radial-gradient(circle, #737990, #eaedf0);
 }
+
+#VibratingCard-1 {
+    background: radial-gradient(circle, #737990, #b3bec8);
+}
+
 #Two {
+    background: radial-gradient(circle, #737990, #eaedf0);
+}
+
+#VibratingCard-2 {
     background: radial-gradient(circle, #eaedf0, #737990);
     float: right;
 
 }
+
 #TheExperts {
     width: 300px;
     border-radius: 5%;
 }
+
 #Three {
     background: radial-gradient(circle, #737990, #eaedf0);
 }
+#VibratingCard-3 {
+    background: radial-gradient(circle, #737990, #eaedf0);
+}
+
 #Four {
+    background: radial-gradient(circle, #737990, #eaedf0);
+}
+
+#VibratingCard-4 {
     background: radial-gradient(circle, #eaedf0, #737990);
     float: right;
 }
+
+.card-title {
+    font-size: 2.5rem;
+}
+
+.card-text {
+    font-size: 1.5rem;
+}
+
 @keyframes glow {
     0%, 100% {
         color: white;
@@ -99,27 +130,32 @@ span {
 
 .glow-text span {
     display: inline-block;
-    animation: glow 1s ease-in-out alternate;
+    animation: glow 1s ease-in-out 1;
+    animation-delay: calc(var(--animation-order) * 0.1s);
+}
+
+.glow-text span:nth-child(1) {
+    --animation-order: 1;
 }
 
 .glow-text span:nth-child(2) {
-    animation-delay: 0.1s;
+    --animation-order: 2;
 }
 
 .glow-text span:nth-child(3) {
-    animation-delay: 0.2s;
+    --animation-order: 3;
 }
 
 .glow-text span:nth-child(4) {
-    animation-delay: 0.3s;
+    --animation-order: 4;
 }
 
 .glow-text span:nth-child(5) {
-    animation-delay: 0.4s;
+    --animation-order: 5;
 }
 
 .glow-text span:nth-child(6) {
-    animation-delay: 0.5s;
+    --animation-order: 6;
     color: #fff;
 }
 
@@ -136,4 +172,58 @@ span {
 .glow-text span:nth-child(9) {
     animation-delay: 0.8s;
     color: #fff;
+}
+
+
+@keyframes glow-container {
+    0%, 99% {
+        animation: none;
+    }
+    1% {
+        animation: glow 1s ease-in-out;
+    }
+}
+
+.glow-text {
+    animation: glow-container 30s linear infinite;
+
+}
+
+
+/* Hero Spin */
+
+#Animation2 {
+    animation-name: spin;
+    animation-duration: 3s;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+        scale: -2;
+
+        
+    }
+
+    100% {
+        transform: rotate(360deg);
+
+    }
+}
+
+/* Features */
+@keyframes vibrate {
+    0% { transform: translate(0); }
+    25% { transform: translate(2px, 2px); }
+    50% { transform: translate(0); }
+    75% { transform: translate(-2px, -2px); }
+    100% { transform: translate(0); }
+}
+
+.vibrating {
+    animation: vibrate .3s 5s;
+
+}
+.vibrating.active { 
+    animation: vibrate 0.3s infinite; 
 }
