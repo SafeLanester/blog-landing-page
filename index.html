@@ -25,9 +25,11 @@
 
 </head>
 <body id="Home">
+  <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v21.0"></script>
     <div class="row text-center">
     <div id="Header">
-    <div class="row">
+f    <div class="row">
       <div class="wrapper hero">    
     <div class="d-flex p-2 logo">
         <h1 class="glow-text" id="animation1"><img src="images/favicon-32x32.png" style="border-radius: 12%;" alt="logo" /> 
@@ -39,6 +41,7 @@
      <div class="countdown"></div>
      <div id="Subscribe" > 
       <h3>Subscribe To Get Notified</h3>
+      <h4>And unlock a sneak peak of the site</h4>
       <div id="Form">
        <form class="signup-form" method="POST" action="https://docs.google.com/forms/d/e/1FAIpQLSdXWGudK4XmqHFVLwxhnESxixB08_Juj7xI5E_upVxu3l1Opw/formResponse">
        <input type="email" name="entry.665044750" placeholder="Enter your email address" required>
@@ -46,10 +49,13 @@
        </form>
        <div id="SocialIcons" class="text-center">
 
-          <h3>Or Follow Us on: </h3>
+          <h3>We Need Your Help, Please Share Our Site</h3>
+          <h3>Like Or Follow Us on: </h3>
           <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-          <a href="#" class="social-button twitter" onclick="shareOnTwitter()"><i class="fab fa-twitter"></i> Follow</a> 
-          <a href="#" class="social-button facebook" onclick="shareOnFacebook()"><i class="fab fa-facebook"></i> Share</a>
+          <div class="fb-like" data-href="https://www.safe-lane.org" data-width="15px" data-layout="button" data-action="like" data-size="large" data-share="true"></div>
+
+          <!-- <a href="#" class="social-button twitter" onclick="shareOnTwitter()"><i class="fab fa-twitter"></i> Follow</a> 
+          <a href="#" class="social-button facebook" onclick="shareOnFacebook()"><i class="fab fa-facebook"></i> Share</a> -->
         <div><a href="" title="Twitter" class="twitterIcon"></a></div>
         <div><a href="" title="linkedIn" class="linkedInIcon"></a></div>
         <div><a href="" title="Facebook" class="pintrestIcon"></a></div>
