@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     const animation1 = document.querySelectorAll('#animation1 span');
     const heroImage = document.getElementById('Animation2');
-    const cards = document.querySelectorAll('.vibrating'); // Selecting all vibrating cards
+    //const cards = document.querySelectorAll('.vibrating'); // Selecting all vibrating cards
     
     function playGlow(animationSpans, index = 0) {
         animationSpans.forEach(span => {
@@ -33,17 +33,17 @@ document.addEventListener("DOMContentLoaded", function() {
         }, 10); // Quick reset to re-trigger the animation 
     }
 
-    function startVibrate() {
-        cards.forEach(card => {
-            card.classList.add('active');
-            setTimeout(() => card.classList.remove('active'), 5000); // Stop vibrating after 5 seconds
-        });
-    }
+    // function startVibrate() {
+    //     cards.forEach(card => {
+    //         card.classList.add('active');
+    //         setTimeout(() => card.classList.remove('active'), 5000); // Stop vibrating after 5 seconds
+    //     });
+    // }
 
     function startAnimations() {
         startGlow();
         startSpin();
-        startVibrate();
+        //startVibrate();
     }
 
     // Delay the initial animation start by 30 seconds
