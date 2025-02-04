@@ -82,7 +82,9 @@ span {
 #Two,
 #Three,
 #Four {
+    height: fit-content;
     background: var(--gradient-secondary);
+    
 }
 
 #VibratingCard-1,
@@ -93,7 +95,7 @@ span {
 #VibratingCard-2,
 #VibratingCard-4 {
     background: var(--gradient-tertiary);
-    float: right;
+
 }
 
 #VibratingCard-1 {
