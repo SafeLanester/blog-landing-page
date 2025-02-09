@@ -68,8 +68,9 @@ span {
 }
 
 /* Form */
-#form {
+#Form {
     padding: 1.25rem; /* Changed from 20px to rem */
+    font-size: medium;
 }
 
 /* Social Icons */
