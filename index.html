@@ -46,6 +46,7 @@
     />
   </head>
   <body id="Home">
+    <!-- engagebay  -->
     <script type="text/javascript">
       var EhAPI = EhAPI || {};
       EhAPI.after_load = function () {
@@ -68,12 +69,6 @@
     </script>
 
     <div id="fb-root"></div>
-    <script
-      async
-      defer
-      crossorigin="anonymous"
-      src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v21.0"
-    ></script>
 
     <div class="row text-center">
       <div id="Header">
@@ -106,43 +101,30 @@
               </p>
               <h3>Subscribe To Get Notified</h3>
               <h4>And unlock a sneak peak of the site</h4>
-              <div id="Form" class="container">
-                <script
-                  charset="utf-8"
-                  type="text/javascript"
-                  src="//js.hsforms.net/forms/embed/v2.js"
-                ></script>
-                <script>
-                  hbspt.forms.create({
-                    portalId: "49012618",
-                    formId: "c755f453-d9ea-448e-84b6-16dc9ce65027",
-                  });
-                </script>
-              </div>
+              <form id="contact-form" method="post" netlify>
+                <div>
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="first-name" name="first-name" required>
+                </div>
+                <div>
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" id="last-name" name="last-name">
+                </div>
+                <div>
+                    <label for="email">E-Mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
               <!--Form 40-->
               <div id="SocialIcons" class="text-center">
                 <h3>We Need Your Help, Please Share Our Site</h3>
                 <h3>Like Or Follow Us on:</h3>
-                <a
-                  href="https://twitter.com/share?ref_src=twsrc%5Etfw"
-                  class="twitter-share-button"
-                  data-show-count="false"
-                  >Tweet</a
-                >
-                <script
-                  async
-                  src="https://platform.twitter.com/widgets.js"
-                  charset="utf-8"
-                ></script>
-                <div
-                  class="fb-like"
-                  data-href="https://www.safe-lane.org"
-                  data-width="15px"
-                  data-layout="button"
-                  data-action="like"
-                  data-size="large"
-                  data-share="true"
-                ></div>
+                <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a>
+                <div class="fb-like" data-href="https://www.safe-lane.org" data-width="15px" data-layout="button" data-action="like" data-size="large" data-share="true"></div>
+            </div>
 
                 <!-- <a href="#" class="social-button twitter" onclick="shareOnTwitter()"><i class="fab fa-twitter"></i> Follow</a> 
           <a href="#" class="social-button facebook" onclick="shareOnFacebook()"><i class="fab fa-facebook"></i> Share</a> -->
@@ -179,6 +161,7 @@
                 style="border-radius: 15px"
               >
                 <img
+                  loading="lazy"
                   src="images/future-bot.webp"
                   class="card-img-top img-fluid"
                   data-at2x="img/icon-1@2x.png"
@@ -200,6 +183,7 @@
             <div class="card vibrating" id="Two" style="border-radius: 15px">
               <div class="card vibrating" id="VibratingCard-2">
                 <img
+                loading="lazy"
                   id="TheExperts"
                   src="images/TheExperts.webp"
                   data-at2x="img/icon-2@2x.png"
@@ -218,6 +202,7 @@
             <div id="Three" class="card vibrating" style="border-radius: 15px">
               <div class="card vibrating" id="VibratingCard-3">
                 <img
+                  loading="lazy"
                   class="card-img-top"
                   src="images/watch.webp"
                   data-at2x="img/icon-3@2x.png"
@@ -237,6 +222,7 @@
             <div id="Four" class="card vibrating" style="border-radius: 15px">
               <div class="card vibrating" id="VibratingCard-4">
                 <img
+                  loading="lazy"
                   class="card-img-top"
                   src="images/icon-4.webp"
                   data-at2x="img/icon-4@2x.png"
@@ -253,8 +239,7 @@
                 <!--card body-->
               </div>
               <!--VC4-->
-            </div>
-            <!--Card 4-->
+            </div><!--Card 4-->
           </div>
           <!--card group-->
         </section>
@@ -276,8 +261,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <!-- Bootstrap's JavaScript plugins -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script><!-- Bootstrap's JavaScript plugins -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
       integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
@@ -299,6 +283,8 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="https://platform.twitter.com/widgets.js" async charset="utf-8"></script>
+    <script src="netlify/functions/submit-form.js"></script>
     <script src="js/script.js"></script>
     <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
     <script type="text/javascript" src="js/jquery.countdown.js"></script>

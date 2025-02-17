@@ -53,3 +53,63 @@ document.addEventListener("DOMContentLoaded", function() {
         setInterval(startAnimations, 30000);
     }, 30000); // Initial delay of 30 seconds
 });
+// Load the Twitter widget script
+document.addEventListener('DOMContentLoaded', function() {
+    var twitterScript = document.createElement('script');
+    twitterScript.type = 'text/javascript';
+    twitterScript.async = true;
+    twitterScript.src = 'https://platform.twitter.com/widgets.js';
+    twitterScript.charset = 'utf-8';
+    document.head.appendChild(twitterScript);
+
+    console.log('Twitter widget script loaded.');
+});
+
+// Load the Facebook SDK script
+document.addEventListener('DOMContentLoaded', function() {
+    var fbScript = document.createElement('script');
+    fbScript.type = 'text/javascript';
+    fbScript.async = true;
+    fbScript.defer = true;
+    fbScript.crossOrigin = 'anonymous';
+    fbScript.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v21.0';
+    document.head.appendChild(fbScript);
+
+    console.log('Facebook SDK script loaded.');
+});
+// Form Script for Newsletter Contact Info Engage Bay
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const firstName = document.getElementById('firstName').value;
+    const lastName = document.getElementById('lastName').value;
+    const email = document.getElementById('email').value;
+
+    const data = {
+        first_name: firstName,
+        last_name: lastName,
+        email: email
+    };
+
+    fetch('https://api.engagebay.com/v2/subscribers', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'Authorization': 'Bearer atug30ssi8u73n88430djopq64'
+        },
+        body: JSON.stringify(data)
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log('Success:', data);
+        alert('Form submitted successfully!');
+    })
+    .catch((error) => {
+        console.error('Error:', error);
+        alert('There was an error submitting the form.');
+    });
+});
+
+
+// This file can contain any additional JavaScript you might want to add
+console.log('Page is fully loaded');
