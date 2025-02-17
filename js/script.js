@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log('Facebook SDK script loaded.');
 });
 // Form Script for Newsletter Contact Info Engage Bay
-document.getElementById('contactForm').addEventListener('submit', function(event) {
+document.getElementById('contact-form').addEventListener('submit', function(event) {
     event.preventDefault();
 
     const firstName = document.getElementById('firstName').value;
