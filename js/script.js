@@ -91,25 +91,9 @@ document.getElementById('contact-form').addEventListener('submit', function(even
         email: email
     };
 
-    fetch('https://api.engagebay.com/v2/subscribers', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-            'Authorization': 'Bearer atug30ssi8u73n88430djopq64'
-        },
-        body: JSON.stringify(data)
-    })
-    .then(response => response.json())
-    .then(data => {
-        console.log('Success:', data);
-        alert('Form submitted successfully!');
-    })
-    .catch((error) => {
-        console.error('Error:', error);
-        alert('There was an error submitting the form.');
-    });
-});
+
 
 
 // This file can contain any additional JavaScript you might want to add
 console.log('Page is fully loaded');
+})
