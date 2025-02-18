@@ -8,7 +8,7 @@ exports.handler = async function(event, context) {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                'Authorization': `Bearer ${process.env.oivjchbsg4i5qb8hjoslnslaar}`
+                'Authorization': `Bearer ${process.env.ENGAGEBAY_API_KEY}`
             },
             body: JSON.stringify({ first_name, last_name, email })
         });
