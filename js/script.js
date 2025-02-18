@@ -78,40 +78,35 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log('Facebook SDK script loaded.');
 });
 // Form to EngageBay
-document.addEventListener('DOMContentLoaded', function() {
-    document.getElementById('contact-form').addEventListener('submit', function(event) {
-        event.preventDefault();
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault();
 
-        const firstName = document.getElementById('first-name').value;
-        const lastName = document.getElementById('last-name').value;
-        const email = document.getElementById('email').value;
+    const firstName = document.getElementById('first-name').value;
+    const lastName = document.getElementById('last-name').value;
+    const email = document.getElementById('email').value;
 
-        const data = {
-            first_name: firstName,
-            last_name: lastName,
-            email: email
-        };
+    const data = {
+        first_name: firstName,
+        last_name: lastName,
+        email: email
+    };
 
-        fetch('https://api.hubapi.com/contacts/v1/contact', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-                'Authorization': 'Bearer oivjchbsg4i5qb8hjoslnslaar'
-            },
-            body: JSON.stringify(data)
-        })
-        .then(response => response.json())
-        .then(result => {
-            console.log('Success:', result);
-            alert('Form submitted successfully!');
-        })
-        .catch(error => {
-            console.error('Error:', error);
-            alert('Error submitting the form');
-        });
+    fetch('/.netlify/functions/submit-form', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log('Success:', data);
+        alert('Form submitted successfully!');
+    })
+    .catch((error) => {
+        console.error('Error:', error);
+        alert('There was an error submitting the form.');
     });
 });
-
-
 // This file can contain any additional JavaScript you might want to add
 console.log('Page is fully loaded');
