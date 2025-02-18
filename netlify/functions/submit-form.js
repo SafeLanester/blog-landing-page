@@ -1,4 +1,3 @@
-const fetch = require('node-fetch');
 exports.handler = async function(event, context) {
     const { first_name, last_name, email } = JSON.parse(event.body);
     console.log('Received data:', { first_name, last_name, email });
