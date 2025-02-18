@@ -77,6 +77,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     console.log('Facebook SDK script loaded.');
 });
+// Form to EngageBay
 document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('contact-form').addEventListener('submit', function(event) {
         event.preventDefault();
@@ -95,7 +96,7 @@ document.addEventListener('DOMContentLoaded', function() {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                'Authorization': 'Bearer YOUR_HUBSPOT_API_KEY'
+                'Authorization': 'Bearer oivjchbsg4i5qb8hjoslnslaar'
             },
             body: JSON.stringify(data)
         })
