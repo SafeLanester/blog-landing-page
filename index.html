@@ -46,27 +46,7 @@
     />
   </head>
   <body id="Home">
-    <!-- engagebay  -->
-    <script type="text/javascript">
-      var EhAPI = EhAPI || {};
-      EhAPI.after_load = function () {
-        EhAPI.set_account("atug30ssi8u73n88430djopq64", "gmailtjbc");
-        EhAPI.execute("rules");
-      };
-      (function (d, s, f) {
-        var sc = document.createElement(s);
-        sc.type = "text/javascript";
-        sc.async = true;
-        sc.src = f;
-        var m = document.getElementsByTagName(s)[0];
-        m.parentNode.insertBefore(sc, m);
-      })(
-        document,
-        "script",
-        "//d2p078bqz5urf7.cloudfront.net/jsapi/ehform.js?v" +
-          new Date().getHours()
-      );
-    </script>
+
 
     <div id="fb-root"></div>
 
@@ -101,9 +81,12 @@
               </p>
               <h3>Subscribe To Get Notified</h3>
               <h4>And unlock a sneak peak of the site</h4>
-              <form id="contact-form" name="contact-form" method="post" netlify netlify-honeypot="bot-field" data-netlify="true">
-                <input type="hidden" name="bot-field">
-                <input type="hidden" name="form-name" value="contact-form">
+              <form id="contact-form" name="contact-form" method="post" action="https://script.google.com/macros/s/AKfycbyDyqSOgWOMCErj6LCkMH-u1uIRV1Zvpq5dYqoNJc96lHTyVdq3KeaOOWffYXe69KqI/exec">
+
+                <div>
+                    <label for="email">E-Mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
                 <div>
                     <label for="first-name">First Name:</label>
                     <input type="text" id="first-name" name="first_name" required>
@@ -112,10 +95,7 @@
                     <label for="last-name">Last Name:</label>
                     <input type="text" id="last-name" name="last_name">
                 </div>
-                <div>
-                    <label for="email">E-Mail:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
+
                 <div>
                     <input type="submit" value="Submit">
                 </div>
@@ -127,14 +107,13 @@
                 <h3>Like Or Follow Us on:</h3>
                 <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a>
                 <div class="fb-like" data-href="https://www.safe-lane.org" data-width="15px" data-layout="button" data-action="like" data-size="large" data-share="true"></div>
-            </div>
+            </div><!--SocialIcons 45-->
 
                 <!-- <a href="#" class="social-button twitter" onclick="shareOnTwitter()"><i class="fab fa-twitter"></i> Follow</a> 
           <a href="#" class="social-button facebook" onclick="shareOnFacebook()"><i class="fab fa-facebook"></i> Share</a> -->
               </div>
-              <!--SocialIcons 45-->
-            </div>
-            <!--Subscribe 38-->
+              
+            </div><!--Subscribe 38-->
 
             <div class="hero-img" id="Animation2">
               <img
@@ -145,8 +124,7 @@
                 height="500"
                 loading="lazy"
               />
-            </div>
-            <!--hero-->
+            </div><!--hero-img-->
           </div>
           <!--row-->
         </div>

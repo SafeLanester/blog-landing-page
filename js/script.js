@@ -77,36 +77,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     console.log('Facebook SDK script loaded.');
 });
-// Form to EngageBay
-document.getElementById('contact-form').addEventListener('submit', function(event) {
-    event.preventDefault();
 
-    const firstName = document.getElementById('first-name').value;
-    const lastName = document.getElementById('last-name').value;
-    const email = document.getElementById('email').value;
-
-    const data = {
-        first_name: firstName,
-        last_name: lastName,
-        email: email
-    };
-
-    fetch('/.netlify/functions/submit-form', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(data)
-    })
-    .then(response => response.json())
-    .then(data => {
-        console.log('Success:', data);
-        alert('Form submitted successfully!');
-    })
-    .catch((error) => {
-        console.error('Error:', error);
-        alert('There was an error submitting the form.');
-    });
-});
 // This file can contain any additional JavaScript you might want to add
 console.log('Page is fully loaded');
