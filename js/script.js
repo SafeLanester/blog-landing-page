@@ -78,5 +78,36 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log('Facebook SDK script loaded.');
 });
 
+// Form to JSON
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        const formData = new FormData(event.target);
+        const data = {};
+        formData.forEach((value, key) => {
+            data[key] = value;
+        });
+
+        fetch('YOUR_SCRIPT_URL', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        })
+        .then(response => response.json())
+        .then(result => {
+            console.log('Success:', result);
+            alert('Form submitted successfully!');
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            alert('Error submitting the form');
+        });
+    });
+});
+
+
 // This file can contain any additional JavaScript you might want to add
 console.log('Page is fully loaded');
