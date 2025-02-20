@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', function() {
             data[key] = value;
         });
 
-        fetch('YOUR_SCRIPT_URL', {
+        fetch('https://script.google.com/macros/s/AKfycbyDyqSOgWOMCErj6LCkMH-u1uIRV1Zvpq5dYqoNJc96lHTyVdq3KeaOOWffYXe69KqI/exec', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
