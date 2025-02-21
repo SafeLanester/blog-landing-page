@@ -107,19 +107,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
-function doPost(e) {
-    var response = ContentService.createTextOutput();
-    response.setMimeType(ContentService.MimeType.JSON);
-    response.setContent(JSON.stringify({status: 'success'}));
-    
-    // Add CORS headers
-    response.setHeader('Access-Control-Allow-Origin', '*');
-    response.setHeader('Access-Control-Allow-Methods', 'POST');
-    response.setHeader('Access-Control-Allow-Headers', 'Content-Type');
-    
-    return response;
-  }
-  
+
 
 // This file can contain any additional JavaScript you might want to add
 console.log('Page is fully loaded');
